@@ -1,8 +1,7 @@
 <template>
-  <a
-      href="#"
+  <li
       :key="table.id"
-      class="list-group-item list-group-item-action d-flex justify-content-between align-items-start"
+      class="list-group-item d-flex justify-content-between align-items-start"
   >
     <div class="ms-2 me-auto">
       <h5 class="mb-1">{{ table.name }}</h5>
@@ -11,7 +10,7 @@
     </div>
     <button type="button" class="btn btn-dark">Войти</button>
 
-  </a>
+  </li>
 </template>
 
 <script>
