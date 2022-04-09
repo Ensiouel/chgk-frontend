@@ -6,13 +6,18 @@ const router = createRouter({
     {
       path: '/',
       name: 'main',
-      component: () => import('../views/MainView.vue')
+      component: () => import('../pages/MainPage.vue')
     },
     {
       path: '/tables',
       name: 'tables',
-      component: () => import('../views/TablesView.vue')
+      component: () => import('../pages/TablesPage.vue')
     },
+    {
+      path: '/tables/:id',
+      name: 'table',
+      component: () => import('../pages/TablePage.vue')
+    }
   ]
 })
 

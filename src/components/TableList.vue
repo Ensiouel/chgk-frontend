@@ -3,6 +3,7 @@
     <TableListItem
         v-for="table in tables"
         :table="table"
+        @selectPack="$emit('selectPack', table.packID)"
     />
   </ol>
 </template>
